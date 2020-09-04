@@ -2,5 +2,11 @@
   "packages": ["packages/*"],
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "registry": "http://localhost:4873",
+      "verifyAccess": false
+    }
+  }
 }
