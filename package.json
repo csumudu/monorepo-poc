@@ -1,0 +1,20 @@
+{
+  "name": "grubcenter",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run --scope @grubcenter/admin-portal start --stream",
+    "start:brands": "lerna run --scope @grubcenter/brands start --stream",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  }
+}
