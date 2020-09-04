@@ -19,6 +19,7 @@ function App() {
         >
           Learn React
           Learn React
+          Learn React
         </a>
       <Button/>
       </header>
